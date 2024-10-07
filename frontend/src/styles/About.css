@@ -1,0 +1,125 @@
+/* Container for the entire About page */
+.about-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Intro section styling */
+  .intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .intro-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .intro-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .intro-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  /* Mission section styling */
+  .mission-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .mission-section p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  .why{
+    text-align: center;
+  }
+  /* Features section styling */
+  .afeatures-section {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .afeature {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .feature-image {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .feature-description {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .feature-description img {
+    width: 20px;
+    height: auto;
+  }
+  
+  .feature-description p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.4;
+  }
+  
+  /* Explore section styling */
+  .explore-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .explore-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .explore-image { 
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .explore-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  blockquote {
+    font-size: 1.2rem;
+    color: #444;
+    border-left: 4px solid #007bff;
+    padding-left: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+  }

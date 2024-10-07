@@ -1,0 +1,247 @@
+/* Base styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Home container */
+  .home-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .hero-content {
+    width: 40%;
+    min-width: 300px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-image {
+    max-width: 50%;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Features Section */
+  .features-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 3rem;
+  }
+  
+  .features-section h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   
+    gap: 2rem;
+    
+  }
+  
+  .feature {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .feature img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  /* Explore Section */
+  .explore-section {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .explore-section h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+  }
+  
+  .explore-section p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+  }
+  
+  .explore-button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Final Section */
+  .final-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .final-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+  }
+  
+  .final-section p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+  }
+  
+  .final-section h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+    }
+  
+    .hero-content {
+      width: 100%;
+      padding: 0 2rem;
+    }
+  
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-image {
+      max-width: 80%;
+      margin-top: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-section {
+      margin-bottom: 2rem;
+    }
+  
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .explore-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .explore-section p {
+      font-size: 1.1rem;
+    }
+    
+    .explore-button {
+      padding: 0.6rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hero-section h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-section p {
+      font-size: 0.9rem;
+    }
+  
+    .hero-image {
+      max-width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .features-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .feature p {
+      font-size: 0.9rem;
+    }
+  
+    .explore-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .explore-section p {
+      font-size: 1rem;
+    }
+  
+    .explore-button {
+      padding: 0.5rem 1.2rem;
+      font-size: 0.8rem;
+    }
+  
+    .final-section p {
+      font-size: 1rem;
+    }
+  
+    .final-section h3 {
+      font-size: 1.3rem;
+    }
+  }

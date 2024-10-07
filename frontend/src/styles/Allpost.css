@@ -1,0 +1,73 @@
+/* Post Card Styling */
+.allpost-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .allpost-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Post Image Styling */
+  .post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eaeaea;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .allpost-card:hover .post-image {
+    opacity: 0.9;
+  }
+  
+  /* Post Text Styling */
+  .post-text {
+    /* padding: 20px; */
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-weight: 500;
+  }
+  .post-details{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  /* Link Styling */
+  .post-link {
+    text-decoration: none;
+    color: inherit; /* Inherits color from the parent element */
+    display: block;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .post-link:hover {
+    color: #007bff; /* Changes text color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .allpost-card {
+      margin-bottom: 20px; /* Adds spacing between cards on smaller screens */
+    }
+  
+    .post-image {
+      height: 180px; /* Slightly smaller image height on mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .post-text {
+      font-size: 16px; /* Smaller text size on very small screens */
+    }
+  
+    .post-image {
+      height: 150px; /* Further reduce image height on small screens */
+    }
+  }
+  

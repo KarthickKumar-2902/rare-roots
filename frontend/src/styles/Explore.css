@@ -1,0 +1,84 @@
+/* General reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Explore Grid Layout */
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  /* text-decoration: none; */
+}
+
+/* Loading Container Styles */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.loading-image {
+  width: 140px;
+  height: 120px;
+}
+
+/* Post Card Styling */
+/* .Allposts {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Allposts:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.Allposts img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.post-text {
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .explore-grid {
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  /* .Allposts img {
+    height: 180px;
+  } */
+}
+
+@media (max-width: 480px) {
+  .explore-grid {
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  /* .Allposts img {
+    height: 150px;
+  } */
+}

@@ -1,0 +1,110 @@
+
+.container-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 50px; */
+  background-color: #f7f9fc; 
+  min-height: auto;
+}
+
+.box {
+  background-color: #ffffff; 
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  width: 100%;
+  max-width: 500px; 
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0; 
+}
+
+.box label {
+  display: block;
+  font-size: 16px;
+  color: #333; /* Dark gray text for readability */
+  margin-bottom: 8px;
+  font-weight: 500; /* Slightly bolder text */
+}
+
+/* Input and textarea styling */
+.box input[type='text'],
+.box textarea,
+.box input[type='file'] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; /* Subtle border for inputs */
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 16px; /* Increased margin for spacing */
+  box-sizing: border-box;
+}
+
+/* Textarea specific styling */
+.box textarea {
+  height: 100px; /* Height for textareas */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* File input styling */
+.box input[type='file'] {
+  padding: 0; /* Remove padding for file input */
+  border: none; /* No border for file input */
+}
+
+/* Button styling */
+.box button {
+  background-color: #007bff; /* Elegant blue for primary actions */
+  color: #ffffff; /* White text for contrast */
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 10px; /* Space between buttons */
+  display: inline-block;
+}
+
+.box button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Link button styling */
+.box a button {
+  background-color: #28a745; /* Green color for 'My posts' button */
+  margin-left: 10px; /* Space between buttons */
+}
+
+.box a button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Toast container styling (if needed) */
+.Toastify__toast-container {
+  font-size: 14px;
+}
+
+.Toastify__toast {
+  border-radius: 8px;
+}
+
+.Toastify__toast--success {
+  background-color: #28a745; /* Green for success messages */
+}
+
+.Toastify__toast--error {
+  background-color: #dc3545; /* Red for error messages */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .box {
+    padding: 20px;
+  }
+
+  .box textarea {
+    height: 80px; /* Adjust height for smaller screens */
+  }
+}
