@@ -14,6 +14,7 @@ const client=new S3Client({
         secretAccessKey:process.env.aws_secret_key
     }
 })
+
 const upload=multer({dest:'uploads/'})
 router.post('/upload', upload.single('file'), async (req, res) => {
     try {
